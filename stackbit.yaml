@@ -1,0 +1,100 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+publishDir: public
+pagesDir: content
+models:
+  service:
+    type: page
+    label: Service
+    folder: services
+    match: '*'
+    fields:
+      - type: string
+        name: path
+        label: Path
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: image
+        name: image
+        label: Image
+      - type: boolean
+        name: featured
+        label: Featured
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: number
+        name: weight
+        label: Weight
+        subtype: int
+  team:
+    type: page
+    label: Team
+    folder: team
+    match: '*'
+    fields:
+      - type: string
+        name: path
+        label: Path
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: image
+        name: image
+        label: Image
+      - type: string
+        name: jobtitle
+        label: Jobtitle
+      - type: string
+        name: email
+        label: Email
+      - type: string
+        name: linkedinurl
+        label: Linkedinurl
+      - type: number
+        name: weight
+        label: Weight
+        subtype: int
+  testimonial:
+    type: page
+    label: Testimonial
+    folder: testimonials
+    match: '*'
+    fields:
+      - type: string
+        name: path
+        label: Path
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: string
+        name: image
+        label: Image
+      - type: string
+        name: businessurl
+        label: Businessurl
+      - type: string
+        name: name
+        label: Name
+      - type: string
+        name: business
+        label: Business
+      - type: string
+        name: jobtitle
+        label: Jobtitle
